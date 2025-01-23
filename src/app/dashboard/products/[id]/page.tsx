@@ -10,15 +10,15 @@ const ProductDetailedPage = () => {
 	const { id } = useParams<{ id: string }>()
 	const [dataProduct, setDataProduct] = useState<SingleProductType>()
 
-	const getProduct = async () => {
-		const res = await fetch(`https://fakestoreapi.in/api/products/${id}`)
-		const data: SingleProductType = await res.json()
-
-		setDataProduct(data)
-	}
 	useEffect(() => {
+		const getProduct = async () => {
+			const res = await fetch(`https://fakestoreapi.in/api/products/${id}`)
+			const data: SingleProductType = await res.json()
+
+			setDataProduct(data)
+		}
 		getProduct()
-	}, [id])
+	}, [dataProduct])
 
 	return (
 		<div
