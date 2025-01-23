@@ -1,5 +1,8 @@
+import { redirect } from 'next/navigation'
+
 const HomePage = () => {
-	return <div className='background'>HomePage</div>
+	redirect('dashboard')
+	// return <div className='background'>HomePage</div>
 }
 
 export default HomePage
