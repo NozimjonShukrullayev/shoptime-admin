@@ -67,7 +67,7 @@ const ProductsPage = async () => {
 			</div>
 		)
 	} catch (error) {
-		;<div>Not found any products</div>
+		;<div>{error as string}</div>
 	}
 }
 

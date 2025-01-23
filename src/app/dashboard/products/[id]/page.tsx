@@ -18,7 +18,7 @@ const ProductDetailedPage = () => {
 	}
 	useEffect(() => {
 		getProduct()
-	}, [])
+	}, [id])
 
 	return (
 		<div

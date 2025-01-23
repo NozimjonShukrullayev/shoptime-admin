@@ -23,7 +23,7 @@ const UserDetailedPage = async ({
 			</div>
 		)
 	} catch (error) {
-		;<div>not found any user details</div>
+		;<div>{error as string}</div>
 	}
 }
 

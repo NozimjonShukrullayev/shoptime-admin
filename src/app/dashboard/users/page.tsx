@@ -70,7 +70,7 @@ const UsersPage = async () => {
 			</div>
 		)
 	} catch (error) {
-		;<div>Not found any user</div>
+		;<div>{error as string}</div>
 	}
 }
 
