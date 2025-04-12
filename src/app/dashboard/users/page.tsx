@@ -6,7 +6,7 @@ import { MdOutlineEdit } from 'react-icons/md'
 
 const UsersPage = async () => {
 	try {
-		const res = await fetch(`https://fakestoreapi.in/api/users?limit=250`)
+		const res = await fetch(`https://fakestoreapi.in/api/users?limit=40`)
 		const { users }: UsersType = await res.json()
 
 		return (

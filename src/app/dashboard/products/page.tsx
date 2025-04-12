@@ -6,7 +6,7 @@ import { MdOutlineEdit } from 'react-icons/md'
 
 const ProductsPage = async () => {
 	try {
-		const res = await fetch(`https://fakestoreapi.in/api/products?limit=250`)
+		const res = await fetch(`https://fakestoreapi.in/api/products?limit=80`)
 		const { products }: ProductsType = await res.json()
 
 		return (
